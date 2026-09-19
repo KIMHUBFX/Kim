@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "FootballHub",
+    "slug": "footballhub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "footballhub",
+    "userInterfaceStyle": "dark",
+    "plugins": ["expo-router"],
+    "experiments": {"typedRoutes": true}
+  }
+}
