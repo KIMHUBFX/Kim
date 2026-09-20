@@ -1,11 +1,10 @@
 import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
 import { router } from 'expo-router';
-import { theme } from '@/constants/theme';
+import { theme } from '@/themes';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-
       {/* Header */}
       <View style={styles.header}>
         <Text style={styles.brand}>
@@ -20,16 +19,15 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.feed}
       >
-
         {/* Welcome */}
         <Text style={styles.sectionTitle}>eFootball Community</Text>
+
         <Text style={styles.sectionSubtitle}>
           Discover matches, squads, players and the latest eFootball content.
         </Text>
 
         {/* First post */}
         <View style={styles.post}>
-
           <View style={styles.postHeader}>
             <View style={styles.avatar}>
               <Text style={styles.avatarText}>E</Text>
@@ -44,7 +42,9 @@ export default function HomeScreen() {
           <View style={styles.postImage}>
             <Text style={styles.imageText}>⚽</Text>
             <Text style={styles.imageTitle}>eFootball</Text>
-            <Text style={styles.imageSubtitle}>YOUR FOOTBALL. YOUR WAY.</Text>
+            <Text style={styles.imageSubtitle}>
+              YOUR FOOTBALL. YOUR WAY.
+            </Text>
           </View>
 
           <View style={styles.actions}>
@@ -62,9 +62,7 @@ export default function HomeScreen() {
           <Text style={styles.captionMuted}>
             Share your squads, goals, players and eFootball moments.
           </Text>
-
         </View>
-
       </ScrollView>
 
       {/* Bottom navigation */}
@@ -81,7 +79,6 @@ export default function HomeScreen() {
 
         <Text style={styles.navItem}>◯</Text>
       </View>
-
     </View>
   );
 }
